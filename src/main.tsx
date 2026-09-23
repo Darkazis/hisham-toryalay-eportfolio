@@ -26,7 +26,7 @@ const navItems = [
   ["Experience", "experience"],
   ["Projects", "projects"],
   ["Skills", "skills"],
-  ["Reflection", "reflection"],
+  ["Task 1a Reflection", "reflection"],
   ["Resume", "resume"],
   ["Cover Letter", "cover-letter"],
 ] as const;
@@ -144,36 +144,89 @@ const projects: Project[] = [
 
 const reflections: Reflection[] = [
   {
-    title: "Expectations before the internship",
+    title: "1. What were my expectations about the internship before I joined?",
     text: [
       "Before joining Optik Consultancy, I expected the internship to be primarily technical. I thought most of my time would involve programming, working through assigned development tasks and applying the software development skills I had learnt at university.",
     ],
   },
   {
-    title: "Reality compared with expectations",
+    title: "2. What was the reality, and how was it different from my expectations?",
     text: [
-      "The reality was broader. The IPWEA NSW & ACT project required software development, but it also required understanding the road recategorisation problem, working with unfamiliar datasets, interpreting client requirements and deciding what could realistically be achieved with the available information and timeframe.",
-      "Unlike many university projects, the solution path was not always clearly defined. Requirements evolved, information could be incomplete, and the team often needed to research, discuss and decide before development could continue.",
+      "The reality was broader than I expected. The IPWEA NSW & ACT project required software development, but it also required understanding the road recategorisation problem, working with unfamiliar datasets, interpreting client requirements and deciding what could realistically be achieved with the available information and timeframe.",
+      "Unlike many university projects, there was not always a clearly defined path toward the solution. Requirements evolved, information could be incomplete, and the team often needed to research, discuss and make decisions before development could continue.",
     ],
   },
   {
-    title: "Most important lessons",
+    title: "3. What lessons were the most important, and why did they matter?",
     text: [
-      "The internship taught me that software engineering relies on more than writing code. Understanding the problem, communicating with stakeholders and explaining technical ideas clearly can be just as important as implementation.",
-      "I also learnt the value of adaptability. When new information changed our assumptions, I had to reconsider approaches instead of becoming attached to an early idea.",
+      "One of the most important lessons I learnt was that software engineering is not simply about being able to write code. Understanding the problem, communicating with stakeholders and explaining technical ideas clearly can be just as important as the technical implementation itself.",
+      "I also learnt the importance of adaptability. There were occasions where our original assumptions or approaches needed to change after receiving new information, and being willing to reconsider an idea rather than becoming attached to it was essential.",
+      "Working in a multidisciplinary environment was another important lesson. The project required us to consider software, data and infrastructure together rather than viewing the problem purely from a software engineering perspective.",
     ],
   },
   {
-    title: "Value proposition to an employer",
+    title: "4. What is my value proposition to an employer, and how can I demonstrate it?",
     text: [
-      "My value proposition is the ability to combine technical problem-solving with communication and adaptability when working on unfamiliar problems.",
-      "I demonstrated this by working with a 1.37-million-segment NSW road dataset, learning unfamiliar geospatial concepts and helping convert policy requirements and client feedback into software functionality.",
+      "My value proposition is the ability to combine technical problem-solving with adaptability and communication when working on unfamiliar problems.",
+      "I can demonstrate this through the IPWEA project, where I worked with a 1.37-million-segment NSW road dataset, learnt unfamiliar geospatial concepts and helped convert policy requirements and client feedback into software functionality. This experience showed that I can learn new domains, break larger problems into manageable tasks and contribute both technically and as part of a wider team.",
     ],
   },
   {
-    title: "Future career direction",
+    title: "5. How did the internship influence the type of role I am interested in?",
     text: [
-      "The internship confirmed that I want software engineering work connected to meaningful and challenging problems. I am especially interested in software that interacts with data and real-world systems, and in consulting-style environments where technical solutions need to respond to client, data and project constraints.",
+      "The internship confirmed that I want software engineering work connected to meaningful and challenging problems rather than isolated feature development. I particularly enjoy projects where software interacts with data and real-world systems, and where there is an opportunity to understand the wider problem rather than only the code.",
+      "It also showed me that I enjoy consulting-style environments where technical solutions need to respond to real client, data and project constraints. That has made software engineering roles involving data, infrastructure and multidisciplinary work a clear direction for my early career.",
+    ],
+  },
+];
+
+const coverCriteria = [
+  {
+    heading: "3.1 Ethical conduct and professional accountability",
+    paragraphs: [
+      "During my internship with Optik Consultancy, I worked on a road recategorisation assessment system for IPWEA NSW & ACT. The system used government and industry datasets to assess NSW roads against Transport for NSW criteria, so the results needed to be evidence-backed and traceable rather than based on unsupported assumptions.",
+      "My responsibility was to help convert policy criteria and client feedback into software rules that could be tested and explained. I checked that rules were connected to the relevant data, contributed to validation checks and paid attention to whether data or software changes were causing unexpected changes in assessment results.",
+      "As a result, the team delivered software, reports and technical handover documentation that made the assessment logic easier to review. The work reinforced my understanding that professional accountability in software engineering includes being able to justify how a system reaches its outputs, especially when those outputs may inform real engineering decisions.",
+    ],
+  },
+  {
+    heading: "3.2 Communication with engineers and stakeholders from different fields",
+    paragraphs: [
+      "Communication was central to both my internship and my work at Factory Direct Commercial Kitchens. At Optik Consultancy, the project involved software engineers, supervisors and client stakeholders who approached the road recategorisation problem from different professional perspectives.",
+      "I helped clarify requirements discussed with the client and translate them into development tasks the team could implement. I discussed possible technical approaches with team members, communicated progress through project updates and demonstrations, and made sure requirement changes were understood before they became software rules.",
+      "That communication reduced misunderstandings as the project evolved and helped the team adapt the platform to the client's requirements. In my commercial-kitchen role, I also translated customer needs into specifications for clients, fabricators and installers, which strengthened my ability to communicate across technical and non-technical groups.",
+    ],
+  },
+  {
+    heading: "3.3 Creative, innovative and proactive environment",
+    paragraphs: [
+      "The IPWEA project did not begin with a fully defined technical solution. The broader problem was how to support a road recategorisation process involving policy criteria, fragmented road data and several external datasets.",
+      "My task was to contribute to a practical software approach while the team's understanding of the problem was still developing. I researched unfamiliar geospatial concepts, tested what could realistically be achieved with the available data and adapted implementation decisions as requirements became clearer.",
+      "This proactive work helped the team build a browser-based decision-support platform that assessed more than 900 NSW State and Regional roads and included statewide Local Road candidates in best-fit analysis. It also made me more comfortable working in environments where the solution develops through investigation rather than being known from the start.",
+    ],
+  },
+  {
+    heading: "3.4 Use and management of information",
+    paragraphs: [
+      "The strongest information-management challenge I have worked on was the IPWEA road recategorisation project. The project required road, population, traffic, heavy-vehicle network and planning data to be brought together in a form the assessment system could use.",
+      "I processed and reconciled a NSW road dataset containing approximately 1.37 million segments using Python, GeoPandas, Shapely, Pandas and SciPy. I worked with spatial joins, network topology and validation checks so the data could support assessment rules and interactive map evidence.",
+      "The result was a more usable information base for the decision-support platform, including assembled routes, connections to towns and key facilities, integrated traffic and heavy-vehicle network data, and supporting Excel reports. This gave me practical experience managing complex information while maintaining consistency and traceability.",
+    ],
+  },
+  {
+    heading: "3.5 Managing my own performance in a professional environment",
+    paragraphs: [
+      "My internship was my first extended professional engineering project where requirements and priorities could change as the work developed. I needed to balance my own technical tasks with team-lead responsibilities, meetings, client demonstrations and project deadlines.",
+      "I managed this by breaking larger pieces of work into smaller tasks, tracking priorities and regularly reviewing what needed to be completed for upcoming deliverables. When I encountered unfamiliar geospatial data-processing concepts, I researched them independently, tested possible approaches and discussed findings with the team before implementation decisions were made.",
+      "By managing my own work this way, I was able to contribute to the delivered software as well as the supporting reports and technical documentation within the project timeframe. The experience helped me build a more realistic understanding of professional engineering work, where progress depends on learning, prioritising and adjusting as new information appears.",
+    ],
+  },
+  {
+    heading: "3.6 Teamwork and leadership when required",
+    paragraphs: [
+      "During the Optik Consultancy internship, I worked as team lead within a multidisciplinary engineering team. The role required me to complete my own development work while also helping the team stay organised and informed.",
+      "I ran regular check-ins, followed up on tasks, shared information between team members, supervisors and the client, and helped work through technical or requirement-related roadblocks. At the same time, I learnt that leadership did not mean making every decision myself. Different team members had knowledge in areas I did not, so I needed to listen and change approach when another solution made more sense.",
+      "This helped the team maintain progress and deliver the project outputs within the internship timeframe. It also made me more confident taking responsibility for team progress while still working collaboratively and making use of the different strengths within the team.",
     ],
   },
 ];
@@ -219,10 +272,11 @@ function App() {
             <p className="eyebrow">Software Engineering Graduate</p>
             <h1>Hisham Toryalay</h1>
             <p className="hero-statement">
-              I am interested in software that works with data and real-world
-              systems, especially projects where engineering judgement,
-              communication and adaptable problem-solving matter as much as the
-              code.
+              I am a software engineering graduate interested in systems that
+              connect data, infrastructure and practical engineering decisions.
+              My internship with Optik Consultancy shaped my direction toward
+              consulting-style work where technical problem-solving, clear
+              communication and adaptability all matter.
             </p>
             <div className="hero-actions" aria-label="Portfolio actions">
               <a className="button primary" href="#experience">
@@ -251,40 +305,40 @@ function App() {
             </div>
             <div className="visual-caption">
               <strong>Recent focus</strong>
-              <span>Geospatial data, road networks, policy rules and interactive evidence.</span>
+              <span>Geospatial data, road networks, policy rules and practical engineering evidence.</span>
             </div>
           </div>
         </section>
 
         <section id="about" className="section">
           <SectionHeading kicker="About" title="Engineering Pathway">
-            My internship moved my view of software engineering from a mostly
-            technical profession to a broader practice shaped by data, policy,
-            clients and infrastructure decisions.
+            My internship changed how I understand professional software
+            engineering. It showed me that useful systems depend on problem
+            definition, evidence, communication and implementation.
           </SectionHeading>
           <div className="two-column">
             <div className="prose">
               <p>
-                I am a Software Engineering graduate with a particular interest
-                in software that works with data and real-world systems. At
-                university, I enjoyed the technical side of development, but my
-                Optik Consultancy internship showed me that I am most interested
-                in projects where software helps solve practical engineering
-                problems.
+                I began software engineering with a mostly technical view of the
+                profession. I expected professional work to centre on
+                programming, assigned development tasks and applying the
+                technical skills I had built through university projects.
               </p>
               <p>
-                During the internship, I worked with IPWEA NSW & ACT on a road
-                recategorisation project in New South Wales. The work brought
-                together road, population, traffic and infrastructure data so
-                roads could be assessed against Transport for NSW criteria. I
-                worked across data processing, translating requirements into
-                software rules and communicating progress with the client.
+                The Optik Consultancy internship broadened that understanding.
+                Working with IPWEA NSW & ACT on a road recategorisation project
+                in New South Wales, I saw how software, geospatial data, policy
+                criteria, client requirements and infrastructure decisions can
+                intersect in one system.
               </p>
               <p>
-                The experience helped me understand the importance of
-                communication, adaptability and problem definition. It also made
-                consulting-style environments and multidisciplinary work a clear
-                direction for my early career.
+                I worked across data processing, software rules and client
+                communication, and learnt that implementation is only one part
+                of engineering practice. Understanding the actual problem,
+                working with incomplete information, explaining technical ideas
+                and adapting to changing requirements are just as important.
+                That experience is why I am drawn to software roles involving
+                data, real-world systems and multidisciplinary consulting work.
               </p>
             </div>
             <aside className="profile-panel" aria-label="Professional summary">
@@ -299,7 +353,11 @@ function App() {
                 </div>
                 <div>
                   <dt>Career interests</dt>
-                  <dd>Software, data, real-world systems and consulting projects</dd>
+                  <dd>Software, data, infrastructure systems and consulting-style engineering</dd>
+                </div>
+                <div>
+                  <dt>Value proposition</dt>
+                  <dd>Technical problem-solving combined with adaptability and stakeholder communication</dd>
                 </div>
                 <div>
                   <dt>Contact</dt>
@@ -438,8 +496,8 @@ function App() {
 
         <section id="skills" className="section tinted">
           <SectionHeading kicker="Skills" title="Technical Skills">
-            Grouped by the way they appear in my source resume, without ratings
-            or unsupported proficiency scores.
+            Skills supported by my internship, university projects and
+            professional experience.
           </SectionHeading>
           <div className="skills-grid">
             {skillGroups.map((group) => (
@@ -456,9 +514,11 @@ function App() {
         </section>
 
         <section id="reflection" className="section">
-          <SectionHeading kicker="Reflection" title="Professional Development">
-            Five internship reflection areas presented as a development story:
-            expectations, reality, lessons, value and direction.
+          <SectionHeading kicker="Task 1a Reflection" title="Professional Development">
+            My workplace experience at Optik Consultancy helped form a clearer
+            professional identity: software engineering work can involve data,
+            infrastructure, clients and uncertain problem-solving as much as
+            code.
           </SectionHeading>
           <div className="reflection-list">
             {reflections.map((reflection, index) => (
@@ -478,8 +538,8 @@ function App() {
         <section id="resume" className="section resume-section">
           <div className="resume-toolbar">
             <SectionHeading kicker="Resume" title="Updated Resume">
-              A browser-readable version of my resume, formatted for screen and
-              clean A4 printing.
+              A concise curriculum vitae covering my profile, technical skills,
+              education, professional experience and selected projects.
             </SectionHeading>
             <button type="button" className="button primary" onClick={() => window.print()}>
               Print Resume
@@ -620,133 +680,52 @@ function App() {
         <section id="cover-letter" className="section cover-section">
           <SectionHeading kicker="Cover Letter" title="Graduate Engineer Application">
             Tailored for the Industrus Engineering Graduate Program and
-            structured around the six selection criteria from my source document.
+            structured around the six required selection criteria.
           </SectionHeading>
           <article className="letter">
+            <div className="letter-header">
+              <div>
+                <strong>Hisham Toryalay</strong>
+                <span>Software Engineering Graduate</span>
+              </div>
+              <address>
+                <a href="tel:+61466552599">0466 552 599</a>
+                <a href="mailto:hishamtoryalay@outlook.com">
+                  hishamtoryalay@outlook.com
+                </a>
+                <a href="https://www.linkedin.com/in/hisham-toryalay-13a154200">
+                  linkedin.com/in/hisham-toryalay-13a154200
+                </a>
+              </address>
+            </div>
+            <p className="letter-date">23 September 2026</p>
             <p>Dear Hiring Manager,</p>
             <p>
               I am writing to apply for the Graduate Engineer position with
               Industrus Engineering. Having recently completed my Software
-              Engineering degree at UTS and an engineering internship with Optik
-              Consultancy, I am interested in the opportunity to continue
-              developing both my technical and professional skills through the
-              Industrus Graduate Program. My internship gave me experience
-              working on real consulting projects where I had to communicate
-              with clients, work through changing requirements and use software
-              and data to solve practical engineering problems.
+              Engineering degree at UTS and completed an engineering internship
+              with Optik Consultancy, I am interested in the Industrus Graduate
+              Program because it offers exposure to varied engineering projects
+              with structured training and mentoring. My internship showed me
+              that I enjoy consulting-style environments where software must
+              respond to real clients, data and practical project constraints.
             </p>
-
-            <h3>Ethical conduct and professional accountability</h3>
-            <p>
-              During my internship with Optik Consultancy, I worked on a road
-              recategorisation assessment system for IPWEA NSW & ACT. The system
-              assessed NSW roads using government and industry datasets against
-              Transport for NSW criteria, so it was important that its results
-              could be supported by the available evidence.
-            </p>
-            <p>
-              When developing and testing the system, I worked to ensure that
-              assessment rules were connected to the relevant criteria and data
-              rather than relying on unsupported assumptions. I also contributed
-              to validation checks designed to identify unexpected changes when
-              datasets or software logic were updated. This taught me the
-              importance of being able to justify results produced by software,
-              particularly when those results may contribute to real engineering
-              decisions.
-            </p>
-
-            <h3>Communication with engineers and stakeholders from different fields</h3>
-            <p>
-              Communication became a major part of my internship because the
-              project involved people with different technical backgrounds and
-              levels of software knowledge. As team lead, I communicated
-              regularly with my multidisciplinary team, supervisors and the
-              client.
-            </p>
-            <p>
-              One challenge was taking road policy and assessment requirements
-              discussed with the client and turning them into something our
-              development team could implement. I helped clarify requirements
-              during meetings, discussed possible approaches with the team and
-              communicated progress back to the client through project updates
-              and demonstrations.
-            </p>
-
-            <h3>Creative, innovative and proactive environment</h3>
-            <p>
-              The IPWEA project began as a broader problem around improving the
-              road recategorisation process. As our team learnt more about the
-              existing process and spoke with stakeholders, we explored how
-              software could make early road assessments more efficient and
-              consistent.
-            </p>
-            <p>
-              I contributed by exploring technical approaches, testing what could
-              realistically be achieved with the available data and adapting the
-              implementation as new requirements emerged. The experience made me
-              more comfortable working in situations where the solution develops
-              alongside the team's understanding of the problem.
-            </p>
-
-            <h3>Use and management of information</h3>
-            <p>
-              The IPWEA project required me to work with large amounts of
-              information from several sources. I processed and reconciled a NSW
-              road dataset containing approximately 1.37 million road segments
-              and worked with population geography, traffic counts,
-              heavy-vehicle networks and planning data.
-            </p>
-            <p>
-              A major part of my role involved determining how these datasets
-              related to one another and transforming them into information the
-              assessment system could use. I used Python and geospatial
-              libraries including GeoPandas, Shapely, Pandas and SciPy, while
-              contributing to validation processes that checked whether updates
-              affected results unexpectedly.
-            </p>
-
-            <h3>Managing my own performance in a professional environment</h3>
-            <p>
-              My internship was my first extended professional engineering
-              project where requirements and priorities could change as the
-              project developed. I had to balance technical responsibilities
-              with team-lead responsibilities, meetings, client demonstrations
-              and project deadlines.
-            </p>
-            <p>
-              I managed this by breaking larger pieces of work into smaller
-              tasks, keeping track of priorities and regularly reviewing what
-              needed to be completed for upcoming deliverables. When I
-              encountered unfamiliar geospatial data-processing concepts, I
-              researched them, tested approaches and discussed my findings with
-              the team.
-            </p>
-
-            <h3>Teamwork and leadership when required</h3>
-            <p>
-              During my internship, I worked as the team lead within a
-              multidisciplinary engineering team. My role involved completing my
-              own development work while also helping keep the team organised
-              and ensuring that information was shared between team members,
-              supervisors and the client.
-            </p>
-            <p>
-              I ran regular team check-ins, followed up on tasks and helped work
-              through technical or requirement-related roadblocks. The internship
-              also taught me that leadership does not mean making every decision
-              myself. Different team members had knowledge and experience in
-              areas I did not, so I needed to listen to their ideas and change
-              approach when another solution made more sense.
-            </p>
+            {coverCriteria.map((criterion) => (
+              <section className="criterion" key={criterion.heading}>
+                <h3>{criterion.heading}</h3>
+                {criterion.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </section>
+            ))}
 
             <p>
               I am particularly interested in Industrus Engineering because of
               the opportunity to work across different engineering projects
               while continuing to develop through structured training and
-              mentoring. My internship showed me that I enjoy consulting
-              environments where technical problems need to be solved within real
-              client, data and project constraints, and I would like to continue
-              developing in this type of work.
+              mentoring. I would value the opportunity to bring my software,
+              data and client-facing project experience into a multidisciplinary
+              graduate engineering environment.
             </p>
             <p>
               Thank you for considering my application. I have attached my

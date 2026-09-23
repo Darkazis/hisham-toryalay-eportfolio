@@ -38,6 +38,12 @@ a:hover {
   color: var(--accent-dark);
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(18, 107, 99, 0.35);
+  outline-offset: 4px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -617,14 +623,46 @@ address {
   padding: clamp(1.25rem, 4vw, 2.4rem);
 }
 
+.letter-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.letter-header div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.letter-header strong {
+  font-size: 1.15rem;
+}
+
+.letter-header span,
+.letter-date {
+  color: var(--muted);
+}
+
+.letter-header address {
+  font-size: 0.95rem;
+}
+
 .letter h3 {
   margin: 1.7rem 0 0.55rem;
   color: var(--accent-dark);
   font-size: 1.1rem;
+  line-height: 1.25;
 }
 
 .letter p {
   color: #35423e;
+}
+
+.criterion {
+  break-inside: avoid;
 }
 
 .site-footer {
@@ -649,6 +687,7 @@ address {
 
   nav {
     justify-content: flex-start;
+    font-size: 0.88rem;
   }
 
   .hero,
@@ -671,12 +710,14 @@ address {
   .resume-header,
   .resume-entry,
   .item-heading,
+  .letter-header,
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
   }
 
   address,
+  .letter-header address,
   .resume-entry span {
     text-align: left;
   }
@@ -698,12 +739,12 @@ address {
   }
 
   nav {
-    gap: 0.45rem 0.7rem;
-    font-size: 0.86rem;
+    gap: 0.45rem 0.58rem;
+    font-size: 0.82rem;
   }
 
   h1 {
-    font-size: 3.1rem;
+    font-size: 2.95rem;
   }
 
   .button {
@@ -748,7 +789,9 @@ address {
   #cover-letter,
   .site-footer,
   .resume-toolbar .button,
-  .resume-toolbar .section-heading {
+  .resume-toolbar .section-heading,
+  .letter-header,
+  .letter-date {
     display: none !important;
   }
 
