@@ -537,7 +537,7 @@ function App() {
 
         <section id="resume" className="section resume-section">
           <div className="resume-toolbar">
-            <SectionHeading kicker="Resume" title="Updated Resume">
+            <SectionHeading kicker="Resume" title="Resume">
               A concise curriculum vitae covering my profile, technical skills,
               education, professional experience and selected projects.
             </SectionHeading>
@@ -600,7 +600,7 @@ function App() {
                     Innovation.
                   </p>
                 </div>
-                <span>January 2021 - July 2026</span>
+                <span>January 2021 - December 2026</span>
               </div>
             </div>
 
