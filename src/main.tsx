@@ -26,7 +26,7 @@ const navItems = [
   ["Experience", "experience"],
   ["Projects", "projects"],
   ["Skills", "skills"],
-  ["Task 1a Reflection", "reflection"],
+  ["Professional Development", "reflection"],
   ["Resume", "resume"],
   ["Cover Letter", "cover-letter"],
 ] as const;
@@ -144,20 +144,20 @@ const projects: Project[] = [
 
 const reflections: Reflection[] = [
   {
-    title: "1. What were my expectations about the internship before I joined?",
+    title: "Before the internship",
     text: [
       "Before joining Optik Consultancy, I expected the internship to be primarily technical. I thought most of my time would involve programming, working through assigned development tasks and applying the software development skills I had learnt at university.",
     ],
   },
   {
-    title: "2. What was the reality, and how was it different from my expectations?",
+    title: "What changed in practice",
     text: [
       "The reality was broader than I expected. The IPWEA NSW & ACT project required software development, but it also required understanding the road recategorisation problem, working with unfamiliar datasets, interpreting client requirements and deciding what could realistically be achieved with the available information and timeframe.",
       "Unlike many university projects, there was not always a clearly defined path toward the solution. Requirements evolved, information could be incomplete, and the team often needed to research, discuss and make decisions before development could continue.",
     ],
   },
   {
-    title: "3. What lessons were the most important, and why did they matter?",
+    title: "Professional lessons",
     text: [
       "One of the most important lessons I learnt was that software engineering is not simply about being able to write code. Understanding the problem, communicating with stakeholders and explaining technical ideas clearly can be just as important as the technical implementation itself.",
       "I also learnt the importance of adaptability. There were occasions where our original assumptions or approaches needed to change after receiving new information, and being willing to reconsider an idea rather than becoming attached to it was essential.",
@@ -165,14 +165,14 @@ const reflections: Reflection[] = [
     ],
   },
   {
-    title: "4. What is my value proposition to an employer, and how can I demonstrate it?",
+    title: "Value I can bring to an employer",
     text: [
       "My value proposition is the ability to combine technical problem-solving with adaptability and communication when working on unfamiliar problems.",
-      "I can demonstrate this through the IPWEA project, where I worked with a 1.37-million-segment NSW road dataset, learnt unfamiliar geospatial concepts and helped convert policy requirements and client feedback into software functionality. This experience showed that I can learn new domains, break larger problems into manageable tasks and contribute both technically and as part of a wider team.",
+      "I can demonstrate this through the way I approached the IPWEA project: learning unfamiliar geospatial concepts, working through incomplete information and helping convert policy requirements and client feedback into software functionality. This experience showed that I can learn new domains, break larger problems into manageable tasks and contribute both technically and as part of a wider team.",
     ],
   },
   {
-    title: "5. How did the internship influence the type of role I am interested in?",
+    title: "Career direction",
     text: [
       "The internship confirmed that I want software engineering work connected to meaningful and challenging problems rather than isolated feature development. I particularly enjoy projects where software interacts with data and real-world systems, and where there is an opportunity to understand the wider problem rather than only the code.",
       "It also showed me that I enjoy consulting-style environments where technical solutions need to respond to real client, data and project constraints. That has made software engineering roles involving data, infrastructure and multidisciplinary work a clear direction for my early career.",
@@ -514,7 +514,7 @@ function App() {
         </section>
 
         <section id="reflection" className="section">
-          <SectionHeading kicker="Task 1a Reflection" title="Professional Development">
+          <SectionHeading kicker="Reflection" title="Professional Development">
             My workplace experience at Optik Consultancy helped form a clearer
             professional identity: software engineering work can involve data,
             infrastructure, clients and uncertain problem-solving as much as
